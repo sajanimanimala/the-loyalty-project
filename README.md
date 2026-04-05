@@ -126,6 +126,90 @@ A confusing interface is a silent exit door.
 
 ---
 
+# 📊 User Research Insights
+
+A survey was conducted among real users (friends & family) to understand why customers drop off after first use.
+
+### 🔍 Key Observations
+
+#### 🧠 1. UI/UX Complexity (Most Common)
+
+Users frequently reported:
+
+* Confusing interfaces
+* Cluttered layouts
+* Too many features at once
+
+👉 **Insight:** Overwhelming UI leads to immediate drop-off.
+
+---
+
+#### ⚡ 2. Performance & Reliability Issues
+
+* Laggy systems
+* Data not saving
+* Bugs and glitches
+
+👉 **Insight:** Poor performance quickly breaks user trust.
+
+---
+
+#### 🧭 3. Onboarding & Usability Friction
+
+* Too much setup required
+* Difficult navigation
+* Not intuitive
+
+👉 **Insight:** If users struggle early, they don’t return.
+
+---
+
+#### 📞 4. Customer Support Gaps
+
+* Poor service experience
+* Ineffective chatbots
+* Slow support response
+
+👉 **Insight:** Lack of support prevents recovery after a bad experience.
+
+---
+
+#### 💸 5. Value Perception Issues
+
+* Paying for basic features
+* Product not matching expectations
+
+👉 **Insight:** Users leave when value is unclear or feels unfair.
+
+---
+
+#### 🌍 6. Product Fit & Alternatives
+
+* Preference for other tools (e.g., Zoom)
+* Not suitable for specific needs
+
+👉 **Insight:** Drop-off is sometimes due to poor product-market fit.
+
+---
+
+### 🎯 Conclusion
+
+> Customer drop-off is not caused by a single issue — it is a combination of **UX friction, performance issues, unclear value, and poor support systems**.
+
+---
+
+### 🧩 Impact on This Project
+
+These insights directly influenced the design of:
+
+* 💬 **Voice to Value** → Detects issues from user feedback
+* 🖼️ **First Impressions** → Identifies UI/UX problems visually
+
+👉 The system focuses on **detecting real friction points and providing actionable solutions.**
+
+---
+
+
 # 📂 Project Structure
 
 ```id="struct1"
