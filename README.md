@@ -208,10 +208,10 @@ project/
 │   ├── script.js
 │   ├── ui.js
 │
-├── assets/
-│   ├── home.png
-│   ├── feedback_output.png
-│   ├── ui_output.png
+├── Output/
+│   ├── Home page.png
+│   ├── Feedback_Analysis.png
+│   ├── ui__analysis.png
 │
 └── README.md
 ```
