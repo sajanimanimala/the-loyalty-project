@@ -1,5 +1,4 @@
-The Loyalty Project
-- Turn First-Timers into Forever Fans.
+The Loyalty Project : Turn First-Timers into Forever Fans.
 
 The Loyalty Project is a full-stack application designed to tackle one of the most critical product challenges — customer drop-off after the first use.
 
