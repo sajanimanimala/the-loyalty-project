@@ -119,24 +119,10 @@ UI Analysis : POST /analyze-ui
 
 How It Works
 
-Feedback Analysis
+Feedback Analysis: input feedback, keyword detection, issue categorization, solution + template generation
+UI Analysis : Upload UI screenshot,image processing,edge detection (complexity),contour detection (elements),brightness & layout analysis,insight generation
 
-Input feedback
-Keyword detection
-Issue categorization
-Solution + template generation
-
-UI Analysis
-
-Upload UI screenshot
-Image preprocessing
-Edge detection (complexity)
-Contour detection (elements)
-Brightness & layout analysis
-Insight generation
-
-Future Improvements
-
+Future Improvements:
 AI-based NLP (instead of keyword matching),
 Deep learning UI detection,
 Real-time product analytics,
