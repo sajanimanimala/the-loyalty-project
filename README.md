@@ -15,7 +15,8 @@ By combining **feedback intelligence** and **UI analysis**, the system identifie
 
 ## 🚨 Problem Statement
 
-> Most users don’t leave because your product is bad — they leave because the experience is unclear, confusing, or overwhelming.
+>  Customer drop after first use.
+>  Most users don’t leave because your product is bad — they leave because the experience is unclear, confusing, or overwhelming.
 
 Businesses often:
 
