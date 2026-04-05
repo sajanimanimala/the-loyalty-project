@@ -65,30 +65,51 @@ Project Structure
 the loyalty project/
 │
 ├── Backend/
+
 │   ├── main.py
+
 │   ├── analyzer.py
+
 │   ├── templates_data.json
+
 │
+
 ├── Frontend/
+
 │   ├── index.html
+
 │   ├── feedback.html
+
 │   ├── ui.html
+
 │   ├── script.js
+
 │   ├── ui.js
+
 │
+
 │
+
 └── README.md
 
+
 Backend Setup:
+
 cd Backend
+
 pip install fastapi uvicorn python-multipart opencv-python numpy
 
 Run backend:
+
 uvicorn main:app --reload
 
+
 Frontend Setup:
+
 cd Frontend
+
 python -m http.server 5500
+
 
 Open:
 http://127.0.0.1:5500 (localhost)
@@ -117,10 +138,10 @@ Insight generation
 
 Future Improvements
 
-AI-based NLP (instead of keyword matching)
-Deep learning UI detection
-Real-time product analytics
-SaaS dashboard version
+AI-based NLP (instead of keyword matching),
+Deep learning UI detection,
+Real-time product analytics,
+SaaS dashboard version.
 
 Author : Sajani Manimala 
 www.linkedin.com/in/sajani-manimala
