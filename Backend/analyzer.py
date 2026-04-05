@@ -3,7 +3,7 @@ import os
 import cv2
 import numpy as np
 
-# ✅ Load JSON safely
+# Load JSON safely
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(BASE_DIR, "templates_data.json")
 
@@ -11,7 +11,7 @@ with open(file_path, "r") as f:
     data = json.load(f)
 
 
-# 🔥 IMAGE ANALYZER
+# IMAGE ANALYZER
 def analyze_image(image_path):
     insights = []
 
@@ -22,10 +22,10 @@ def analyze_image(image_path):
 
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-    # ✅ Resize for consistency
+    # Resize for consistency
     gray = cv2.resize(gray, (300, 300))
 
-    # 🔹 Edge detection (ONLY ONCE)
+    # Edge detection (ONLY ONCE)
     edges = cv2.Canny(gray, 50, 150)
 
     edge_pixels = np.sum(edges > 0)
@@ -39,7 +39,7 @@ def analyze_image(image_path):
     else:
         insights.append("Simple UI → clean design")
 
-    # 🔹 Contours
+    # Contours
     contours, _ = cv2.findContours(edges, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     contour_count = len(contours)
 
@@ -50,7 +50,7 @@ def analyze_image(image_path):
     else:
         insights.append("Minimal UI → easy navigation")
 
-    # 🔹 Brightness
+    # Brightness
     brightness = np.mean(gray)
 
     if brightness < 80:
@@ -70,7 +70,7 @@ def analyze_image(image_path):
     return insights
 
 
-# 🔥 FEEDBACK ANALYZER (MATCH FRONTEND STRUCTURE)
+# FEEDBACK ANALYZER (MATCH FRONTEND STRUCTURE)
 def analyze_feedback(feedback):
     feedback = feedback.lower()
 
@@ -97,7 +97,7 @@ def analyze_feedback(feedback):
             "template": data[issue]["template"]
         })
 
-    # ✅ RETURN STRUCTURE MATCHES FRONTEND
+    # RETURN STRUCTURE MATCHES FRONTEND
     return {
         "issues": issues_output,
         "image_insights": []
