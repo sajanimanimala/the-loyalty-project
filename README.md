@@ -223,7 +223,7 @@ project/
 ### 1️⃣ Clone Repository
 
 ```id="clone1"
-git clone <your-repo-link>
+git clone <repo-link>
 cd project
 ```
 
@@ -299,17 +299,6 @@ http://127.0.0.1:5500
 
 ---
 
-# 📦 Repository Description (Use on GitHub)
-
-**Short:**
-
-> Analyze customer drop-off after first use using feedback intelligence and computer vision.
-
-**Detailed:**
-
-> A full-stack application that detects UX issues from customer feedback and UI screenshots using FastAPI and OpenCV, generating actionable insights to improve retention.
-
----
 
 # 📜 Copyright
 
@@ -323,7 +312,7 @@ Unauthorized use, copying, or distribution is prohibited.
 # 👤 Author
 
 **Sajani M**
-Aspiring AI Engineer | AIML Student
+www.linkedin.com/in/sajani-manimala
 
 ---
 
