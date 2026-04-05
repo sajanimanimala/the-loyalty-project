@@ -83,23 +83,8 @@ A confusing interface is a silent exit door.
 
 ---
 
-# 📸 Screenshots
-
-### 🏠 Home Page
-
-```
-[the-loyalty-project](Output)/(Home page.png)
-```
-
-### 💬 Feedback Analysis Output
-
-Output/Feedback_Analysis.png
-
-### 🖼️ UI Analysis Output
-
-```id="img3"
-![UI Analysis](assets/ui_output.png)
-```
+# 📸 Screenshots 
+Uploaded in Output folder
 
 ---
 
