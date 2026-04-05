@@ -10,24 +10,16 @@ to convert raw inputs into actionable product improvements.
 
 Problem Statement : Most products don’t fail because they lack features — they fail because users leave before discovering value. (Customer drop after first use)
 
-Users drop off after their first interaction due to:
-i.Confusing onboarding
-ii.Poor UI/UX
-iii.Performance issues
-iv.Lack of perceived value
+Users drop off after their first interaction due to confusing onboarding ,poor UI/UX , performance issues,lack of perceived value.
 
 The real challenge is: Teams don’t know why users leave — they guess.
 
 Solution
 
-The Loyalty Project eliminates guesswork by:
-1.Detecting problems from real feedback
-2.Analyzing UI for friction points
-3.Generating structured solutions
+The Loyalty Project eliminates guesswork by detecting problems from real feedback,analyzing UI for friction points,generating structured solutions.
 
 Core Features
--> Voice to Value
-“Every feedback is a clue. We decode it.”
+Voice to Value - “Every feedback is a clue. We decode it.”
 Description : Stop guessing why customers leave. Voice to Value transforms raw customer feedback into:
 Clear problem statements
 Categorized issues
@@ -35,8 +27,7 @@ Actionable solutions with templates
 
 So you fix what actually hurts, not what you assume does.
 
--> First Impressions
-“See your product the way your customers do — for the first time, every time.”
+-> First Impressions - “See your product the way your customers do — for the first time, every time.”
 Description : A confusing interface is a silent exit door. First Impressions audits your website’s UI/UX using computer vision and delivers:
 Visual complexity insights
 Layout detection (mobile vs desktop)
