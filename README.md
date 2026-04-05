@@ -85,12 +85,10 @@ A confusing interface is a silent exit door.
 
 # 📸 Screenshots
 
-*(Add your screenshots in an `/assets` folder and link them below)*
-
 ### 🏠 Home Page
 
-```id="img1"
-![Home](assets/home.png)
+```
+[the-loyalty-project](Output)/(Home page.png)
 ```
 
 ### 💬 Feedback Analysis Output
