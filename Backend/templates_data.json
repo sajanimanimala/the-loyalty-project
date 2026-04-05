@@ -1,0 +1,87 @@
+{
+  "onboarding_friction": {
+    "keywords": ["confusing", "signup", "too many steps", "registration"],
+    "solutions": [
+      "Reduce number of steps",
+      "Enable social login",
+      "Add progress indicator"
+    ],
+    "template": {
+      "title": "Optimized Onboarding Flow",
+      "steps": [
+        "Welcome Screen with value proposition",
+        "Google/OTP Login",
+        "Minimal required info",
+        "Progress bar (Step 1/3)"
+      ]
+    }
+  },
+
+  "value_unclear": {
+    "keywords": ["don't understand", "what is this", "unclear", "purpose"],
+    "solutions": [
+      "Add clear value proposition",
+      "Show quick demo",
+      "Highlight benefits"
+    ],
+    "template": {
+      "title": "Value Clarity Screen",
+      "steps": [
+        "1-line product description",
+        "3 key benefits",
+        "CTA: Get Started"
+      ]
+    }
+  },
+
+  "performance_issue": {
+    "keywords": ["slow", "lag", "loading", "crash"],
+    "solutions": [
+      "Optimize images",
+      "Reduce API calls",
+      "Add loading indicators"
+    ],
+    "template": {
+      "title": "Performance Optimization Plan",
+      "steps": [
+        "Compress images",
+        "Lazy load components",
+        "Use caching"
+      ]
+    }
+  },
+
+  "trust_issue": {
+    "keywords": ["unsafe", "scam", "permissions", "privacy"],
+    "solutions": [
+      "Add trust badges",
+      "Explain permissions",
+      "Show testimonials"
+    ],
+    "template": {
+      "title": "Trust Building UI",
+      "steps": [
+        "Display user reviews",
+        "Add security icons",
+        "Explain data usage"
+      ]
+    }
+  },
+
+  "retention_gap": {
+    "keywords": ["won't come back", "no reason", "boring"],
+    "solutions": [
+      "Add notifications",
+      "Introduce rewards",
+      "Personalized content"
+    ],
+    "template": {
+      "title": "Retention Strategy",
+      "steps": [
+        "Push notifications",
+        "Gamification (streaks)",
+        "Email follow-ups"
+      ]
+    }
+  }
+}

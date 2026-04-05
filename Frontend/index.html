@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Loyalty Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Floating blurred blobs */
+    .blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(90px);
+      opacity: 0.25;
+      animation: float 12s ease-in-out infinite alternate;
+      z-index: 0;
+    }
+
+    .blob:nth-child(1) {
+      width: 320px;
+      height: 320px;
+      background: #38bdf8;
+      top: 5%;
+      left: 5%;
+      animation-delay: 0s;
+    }
+
+    .blob:nth-child(2) {
+      width: 380px;
+      height: 380px;
+      background: #a78bfa;
+      top: 50%;
+      right: 8%;
+      animation-delay: 2s;
+    }
+
+    .blob:nth-child(3) {
+      width: 260px;
+      height: 260px;
+      background: #34d399;
+      bottom: 5%;
+      left: 35%;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(0px) translateX(0px) scale(1);
+      }
+      to {
+        transform: translateY(-40px) translateX(30px) scale(1.08);
+      }
+    }
+
+    /* Mouse glow */
+    .mouse-glow {
+      position: fixed;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 70%);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      transition: transform 0.05s linear;
+    }
+
+    /* Glass effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* Card hover glow */
+    .card-glow:hover {
+      box-shadow: 0 20px 60px rgba(255, 255, 255, 0.08);
+    }
+
+    /* Fade-in animation */
+    .fade-up {
+      animation: fadeUp 1s ease forwards;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .fade-delay-1 { animation-delay: 0.2s; }
+    .fade-delay-2 { animation-delay: 0.4s; }
+    .fade-delay-3 { animation-delay: 0.6s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="min-h-screen text-white relative">
+
+  <!-- Interactive Glow -->
+  <div class="mouse-glow" id="mouseGlow"></div>
+
+  <!-- Animated Blobs -->
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+
+  <!-- Navbar -->
+  <header class="relative z-20 w-full px-6 md:px-12 py-6">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between glass rounded-2xl px-6 py-4 shadow-lg">
+      <div class="text-xl md:text-2xl font-bold tracking-wide">
+        The Loyalty Project
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 text-sm md:text-base text-gray-200">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="feedback.html" class="hover:text-cyan-300 transition">Feedback Analysis</a>
+        <a href="ui.html" class="hover:text-emerald-300 transition">UI Analysis</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="relative z-10 min-h-[calc(100vh-100px)] flex flex-col items-center justify-center px-6 py-12">
+    
+    <!-- Hero -->
+    <section class="text-center max-w-5xl mb-16">
+      <p class="uppercase tracking-[0.3em] text-sm text-cyan-300 mb-4 fade-up">
+        Customer Retention Intelligence
+      </p>
+
+      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-tight fade-up fade-delay-1">
+        The Loyalty Project
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl md:text-2xl text-gray-300 font-medium fade-up fade-delay-2">
+        Turn First-Timers into Forever Fans.
+      </p>
+
+      <div class="mt-8 fade-up fade-delay-3">
+        <a href="#features">
+          <button class="bg-white text-slate-900 font-semibold px-8 py-4 rounded-2xl shadow-xl hover:scale-105 hover:shadow-2xl transition duration-300">
+            Start Exploring →
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl w-full">
+      
+      <!-- Feedback Analysis Card -->
+      <a href="feedback.html" class="group">
+        <div class="glass card-glow rounded-3xl p-8 md:p-10 h-full hover:scale-[1.02] transition duration-300">
+          
+          <div class="w-14 h-14 rounded-2xl bg-cyan-500/20 flex items-center justify-center mb-6 border border-cyan-400/20">
+            <i data-lucide="message-square-text" class="w-7 h-7 text-cyan-300"></i>
+          </div>
+
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">💬 Feedback Analysis</h2>
+          <p class="text-cyan-300 font-semibold text-lg mb-2">Feature Name: Voice to Value</p>
+          <p class="italic text-gray-300 mb-5 text-base md:text-lg">
+            “Every feedback is a clue. We decode it.”
+          </p>
+
+          <p class="text-gray-200 leading-relaxed text-[15px] md:text-base">
+            Stop guessing why customers leave. Voice to Value transforms raw customer feedback into clear problem statements and actionable solutions — so you fix what actually hurts, not what you assume does.
+          </p>
+
+          <div class="mt-8 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-500/20 border border-cyan-400/30 text-cyan-200 group-hover:bg-cyan-500/30 transition">
+            Open Feedback Analysis
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+      </a>
+
+      <!-- UI Analysis Card -->
+      <a href="ui.html" class="group">
+        <div class="glass card-glow rounded-3xl p-8 md:p-10 h-full hover:scale-[1.02] transition duration-300">
+          
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center mb-6 border border-emerald-400/20">
+            <i data-lucide="monitor-smartphone" class="w-7 h-7 text-emerald-300"></i>
+          </div>
+
+          <h2 class="text-2xl md:text-3xl font-bold mb-3">🖥️ UI Analysis</h2>
+          <p class="text-emerald-300 font-semibold text-lg mb-2">Feature Name: First Impressions</p>
+          <p class="italic text-gray-300 mb-5 text-base md:text-lg">
+            “See your product the way your customers do — for the first time, every time.”
+          </p>
+
+          <p class="text-gray-200 leading-relaxed text-[15px] md:text-base">
+            A confusing interface is a silent exit door. First Impressions audits your website's UI/UX and delivers visual insights that reveal friction points, drop-off triggers, and design gaps — so your product feels intuitive from the very first click.
+          </p>
+
+          <div class="mt-8 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 group-hover:bg-emerald-500/30 transition">
+            Open UI Analysis
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </div>
+      </a>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 text-center text-gray-400 text-sm py-8">
+    Built to decode retention, reduce friction, and design loyalty.
+  </footer>
+
+  <script>
+    // Mouse Glow
+    const glow = document.getElementById("mouseGlow");
+
+    document.addEventListener("mousemove", (e) => {
+      glow.style.left = `${e.clientX}px`;
+      glow.style.top = `${e.clientY}px`;
+    });
+
+    // Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Analysis | The Loyalty Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* Floating background blobs */
+    .blob {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(90px);
+      opacity: 0.25;
+      animation: float 12s ease-in-out infinite alternate;
+      z-index: 0;
+    }
+
+    .blob:nth-child(1) {
+      width: 320px;
+      height: 320px;
+      background: #38bdf8;
+      top: 8%;
+      left: 6%;
+      animation-delay: 0s;
+    }
+
+    .blob:nth-child(2) {
+      width: 380px;
+      height: 380px;
+      background: #a78bfa;
+      top: 55%;
+      right: 8%;
+      animation-delay: 2s;
+    }
+
+    .blob:nth-child(3) {
+      width: 260px;
+      height: 260px;
+      background: #34d399;
+      bottom: 6%;
+      left: 35%;
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      from {
+        transform: translateY(0px) translateX(0px) scale(1);
+      }
+      to {
+        transform: translateY(-40px) translateX(30px) scale(1.08);
+      }
+    }
+
+    /* Mouse glow */
+    .mouse-glow {
+      position: fixed;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0) 70%);
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      transition: transform 0.05s linear;
+    }
+
+    /* Glass effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* Fade in */
+    .fade-up {
+      animation: fadeUp 0.9s ease forwards;
+      opacity: 0;
+      transform: translateY(25px);
+    }
+
+    .fade-delay-1 { animation-delay: 0.15s; }
+    .fade-delay-2 { animation-delay: 0.3s; }
+    .fade-delay-3 { animation-delay: 0.45s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Result animation */
+    .result-card {
+      animation: popIn 0.4s ease;
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(0.96) translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    textarea::placeholder {
+      color: rgba(255,255,255,0.55);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen text-white relative">
+
+  <!-- Interactive Glow -->
+  <div class="mouse-glow" id="mouseGlow"></div>
+
+  <!-- Animated Blobs -->
+  <div class="blob"></div>
+  <div class="blob"></div>
+  <div class="blob"></div>
+
+  <!-- Navbar -->
+  <header class="relative z-20 w-full px-6 md:px-12 py-6">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between glass rounded-2xl px-6 py-4 shadow-lg">
+      <div class="text-xl md:text-2xl font-bold tracking-wide">
+        The Loyalty Project
+      </div>
+
+      <div class="hidden md:flex items-center gap-8 text-sm md:text-base text-gray-200">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="feedback.html" class="text-cyan-300 font-semibold">Feedback Analysis</a>
+        <a href="ui.html" class="hover:text-emerald-300 transition">UI Analysis</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="relative z-10 px-6 pb-16">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+      <!-- Left Info Section -->
+      <section class="pt-8 lg:pt-16 fade-up">
+        <p class="uppercase tracking-[0.3em] text-sm text-cyan-300 mb-4">
+          Voice to Value
+        </p>
+
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
+          Feedback Analysis
+        </h1>
+
+        <p class="mt-5 text-lg md:text-xl text-gray-300 italic">
+          “Every feedback is a clue. We decode it.”
+        </p>
+
+        <p class="mt-6 text-gray-200 leading-relaxed text-base md:text-lg max-w-xl">
+          Stop guessing why customers leave. Voice to Value transforms raw customer feedback into clear problem statements and actionable solutions — so you fix what actually hurts, not what you assume does.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4 text-sm">
+          <div class="glass px-4 py-2 rounded-xl text-cyan-200 border border-cyan-400/20">
+            💬 Analyze customer pain points
+          </div>
+          <div class="glass px-4 py-2 rounded-xl text-cyan-200 border border-cyan-400/20">
+            📌 Detect friction themes
+          </div>
+          <div class="glass px-4 py-2 rounded-xl text-cyan-200 border border-cyan-400/20">
+            🚀 Suggest actionable improvements
+          </div>
+        </div>
+      </section>
+
+      <!-- Right Form Section -->
+      <section class="fade-up fade-delay-1">
+        <div class="glass rounded-3xl p-6 md:p-8 shadow-2xl">
+          
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-bold">Analyze Feedback</h2>
+              <p class="text-gray-300 mt-1 text-sm md:text-base">
+                Paste customer feedback and extract what matters.
+              </p>
+            </div>
+
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/20 flex items-center justify-center border border-cyan-400/20">
+              <i data-lucide="message-square-text" class="w-7 h-7 text-cyan-300"></i>
+            </div>
+          </div>
+
+          <form id="form" class="space-y-5">
+
+            <div>
+              <label for="feedback" class="block mb-2 text-sm font-medium text-gray-200">
+                Customer Feedback
+              </label>
+              <textarea
+                id="feedback"
+                placeholder="Example: The app looks good, but checkout is too confusing and takes too long..."
+                class="w-full p-4 rounded-2xl bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-300 transition resize-none"
+                rows="7"
+                required
+              ></textarea>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+              <button
+                type="submit"
+                class="w-full bg-cyan-500 text-white py-3 rounded-2xl hover:bg-cyan-400 transition font-semibold shadow-lg hover:scale-[1.02] duration-300"
+              >
+                Analyze Feedback
+              </button>
+
+              <button
+                type="button"
+                id="clearBtn"
+                class="w-full bg-white/10 text-white py-3 rounded-2xl hover:bg-white/20 transition font-semibold border border-white/10"
+              >
+                Clear
+              </button>
+            </div>
+          </form>
+
+          <!-- Result Section -->
+          <div id="result" class="mt-8 space-y-4"></div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="relative z-10 text-center text-gray-400 text-sm py-8">
+    Every complaint hides a conversion opportunity.
+  </footer>
+
+  <script>
+    // Mouse Glow
+    const glow = document.getElementById("mouseGlow");
+
+    document.addEventListener("mousemove", (e) => {
+      glow.style.left = `${e.clientX}px`;
+      glow.style.top = `${e.clientY}px`;
+    });
+
+    // Lucide Icons
+    lucide.createIcons();
+
+    // Clear Button
+    const clearBtn = document.getElementById("clearBtn");
+    const feedbackInput = document.getElementById("feedback");
+    const resultBox = document.getElementById("result");
+
+    clearBtn.addEventListener("click", () => {
+      feedbackInput.value = "";
+      resultBox.innerHTML = "";
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
