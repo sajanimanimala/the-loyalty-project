@@ -4,8 +4,8 @@ The Loyalty Project
 The Loyalty Project is a full-stack application designed to tackle one of the most critical product challenges — customer drop-off after the first use.
 
 It combines:
-🧠 Feedback Intelligence
-🖼️ UI/UX Analysis
+Feedback Intelligence
+UI/UX Analysis
 to convert raw inputs into actionable product improvements.
 
 Problem Statement : Most products don’t fail because they lack features — they fail because users leave before discovering value. (Customer drop after first use)
@@ -120,6 +120,8 @@ UI Analysis : POST /analyze-ui
 How It Works
 
 Feedback Analysis: input feedback, keyword detection, issue categorization, solution + template generation
+
+
 UI Analysis : Upload UI screenshot,image processing,edge detection (complexity),contour detection (elements),brightness & layout analysis,insight generation
 
 Future Improvements:
