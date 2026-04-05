@@ -106,6 +106,12 @@ Uploaded in Output folder
 * OpenCV
 * NumPy
 
+### Testing
+* Swagger UI
+
+### Environment 
+* VS Code localhost
+
 ---
 
 # 📊 User Research Insights
