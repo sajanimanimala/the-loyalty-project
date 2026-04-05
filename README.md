@@ -79,7 +79,7 @@ A confusing interface is a silent exit door.
 # 🎥 Demo Video
 
 👉 Watch the full demo here:
-🔗 **[Google Drive Demo Link](PASTE_YOUR_DRIVE_LINK_HERE)**
+🔗 **[Google Drive Demo Link](https://drive.google.com/file/d/1PiIImiaQHlAbyHx7F64XAUlC_AfCHkf9/view?usp=sharing)**
 
 ---
 
