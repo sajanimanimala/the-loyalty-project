@@ -16,7 +16,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
 
         let output = "";
 
-        // ✅ FIXED: access correct structure
+        // FIXED: access correct structure
         const issues = data.analysis.issues;
 
         if (!issues || issues.length === 0) {
