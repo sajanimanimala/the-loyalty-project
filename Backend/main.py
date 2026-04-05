@@ -5,7 +5,7 @@ from analyzer import analyze_feedback, analyze_image
 
 app = FastAPI()
 
-# ✅ CORS (IMPORTANT)
+# CORS - allows to safely access resources from other domains
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -17,14 +17,14 @@ app.add_middleware(
 @app.get("/")
 def home():
     return {"message": "API is running"}
-# 🔹 FEEDBACK ANALYSIS (text)
+# FEEDBACK ANALYSIS (text)
 @app.post("/analyze")
 async def analyze(feedback: str = Form(...)):
     result = analyze_feedback(feedback)
     return {
         "analysis": result
     }
-# 🔹 UI ANALYSIS (image only)
+# UI ANALYSIS (image only)
 @app.post("/analyze-ui")
 async def analyze_ui(image: UploadFile = File(...)):
 
