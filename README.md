@@ -93,9 +93,7 @@ A confusing interface is a silent exit door.
 
 ### 💬 Feedback Analysis Output
 
-```id="img2"
-![Feedback](assets/feedback_output.png)
-```
+Output/Feedback_Analysis.png
 
 ### 🖼️ UI Analysis Output
 
