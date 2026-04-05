@@ -28,6 +28,10 @@ It helps businesses answer:
 What are customers struggling with?
 What problems are causing dissatisfaction?
 What changes can improve retention?
+
+
+
+
 2. UI Analysis – “First Impressions”
 
 This module evaluates a product’s user interface by analyzing uploaded screenshots of websites or apps. It identifies visual friction points, confusing layouts, cluttered interfaces, and other UI/UX issues that may negatively affect the user’s first impression.
@@ -74,6 +78,9 @@ Built on VS Code.
 Project Structure
 
 the loyalty project/
+
+
+
 │
 ├── Backend/
 
