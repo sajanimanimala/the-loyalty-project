@@ -20,6 +20,10 @@ The Loyalty Project eliminates guesswork by detecting problems from real feedbac
 
 Core Features
 Voice to Value - “Every feedback is a clue. We decode it.”
+
+
+
+
 Description : Stop guessing why customers leave. Voice to Value transforms raw customer feedback into:
 Clear problem statements
 Categorized issues
@@ -28,6 +32,10 @@ Actionable solutions with templates
 So you fix what actually hurts, not what you assume does.
 
 -> First Impressions - “See your product the way your customers do — for the first time, every time.”
+
+
+
+
 Description : A confusing interface is a silent exit door. First Impressions audits your website’s UI/UX using computer vision and delivers:
 Visual complexity insights
 Layout detection (mobile vs desktop)
